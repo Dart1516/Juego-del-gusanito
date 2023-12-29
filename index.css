@@ -43,14 +43,14 @@ h1, h2 {
     /* Estilos específicos para dispositivos móviles */
 
     h1 {
-        font-size: 15px; /* Tamaño más pequeño para el título en una línea */
+        font-size: 20px; /* Tamaño más pequeño para el título en una línea */
     }
 
     .mobile-button {
-        width: 160px; /* Aumentar el tamaño de los botones a 4 veces su tamaño actual */
-        height: 160px;
-        margin: 100px;
-        font-size: 32px; /* Aumentar el tamaño del texto en los botones */
+        width: 20%; /* Establecer el ancho del botón como el 20% del ancho de la pantalla */
+        height: 20vh; /* Establecer la altura del botón como el 20% de la altura de la pantalla */
+        margin: 10px;
+        font-size: 4vmin; /* Ajustar el tamaño del texto en función del tamaño de la pantalla */
     }
 
     #directionButtons {
