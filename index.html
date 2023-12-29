@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Juego del Gusanito HTML 2023</title>
+</head>
+<body>
+    <!-- Contenido HTML -->
+    <div>
+        <h1>Juego del Gusanito HTML 2023</h1>
+        <h2>Por David Puche - Para Gustavo</h2>
+    </div>
+
+    <!-- Canvas para el juego del gusanito -->
+    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+
+    <!-- Controles de dirección para dispositivos móviles -->
+    <div id="directionButtons">
+        <div id="upButton" class="mobile-button" onclick="changeDirection('up')">↑</div>
+        <div id="leftButton" class="mobile-button" onclick="changeDirection('left')">←</div>
+        <div id="rightButton" class="mobile-button" onclick="changeDirection('right')">→</div>
+        <div id="downButton" class="mobile-button" onclick="changeDirection('down')">↓</div>
+    </div>
+
+    <!-- Enlace al archivo de script JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

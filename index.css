@@ -1,0 +1,60 @@
+/* Estilos CSS para el juego del gusanito */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #1b2838, #2b2e33);
+    color: #8d939a;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    border: 2px solid #2b2e33;
+}
+
+h1, h2 {
+    color: #66c0f4;
+}
+
+#directionButtons {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.mobile-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+#upButton, #downButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    #directionButtons {
+        display: flex;
+    }
+
+    #upButton, #downButton {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #leftButton, #rightButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+}
