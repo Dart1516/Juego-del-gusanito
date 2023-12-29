@@ -40,21 +40,26 @@ h1, h2 {
 }
 
 @media screen and (max-width: 600px) {
-    #directionButtons {
-        display: flex;
+    /* Estilos específicos para dispositivos móviles */
+
+    h1 {
+        font-size: 20px; /* Tamaño más pequeño para el título en una línea */
     }
 
-    #upButton, #downButton {
-        width: 100%;
-        justify-content: center;
+    .mobile-button {
+        width: 160px; /* Aumentar el tamaño de los botones a 4 veces su tamaño actual */
+        height: 160px;
+        margin: 10px;
+        font-size: 32px; /* Aumentar el tamaño del texto en los botones */
+    }
+
+    #directionButtons {
+        display: flex;
+        flex-direction: column; /* Colocar los botones en una columna */
         align-items: center;
     }
 
     #leftButton, #rightButton {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
+        flex-direction: row; /* Alinear los botones izquierdo y derecho en una fila */
     }
 }
